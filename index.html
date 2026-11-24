@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Guru SD</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f1f5f9;
+  color:#1e293b;
+}
+header{
+  background:linear-gradient(135deg,#102d50,#2563eb);
+  color:white;
+  padding:55px 20px;
+  text-align:center;
+}
+header h1{font-size:32px;margin:10px 0}
+header p{color:#dbeafe}
+.container{
+  max-width:900px;
+  margin:35px auto;
+  padding:15px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+.card{
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 8px 25px #00000010;
+  text-align:center;
+}
+.icon{font-size:48px}
+.card h2{margin:15px 0 10px}
+.card p{color:#64748b;line-height:1.6}
+a.button{
+  display:inline-block;
+  background:#059669;
+  color:white;
+  padding:13px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:12px;
+}
+a.button.blue{background:#2563eb}
+a.button:hover{opacity:.85}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#64748b;
+  font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div style="font-size:45px">🎓</div>
+  <h1>PORTAL GURU SD</h1>
+  <p>Pusat Alat Bantu Pembelajaran Digital Guru Sekolah Dasar</p>
+</header>
+
+<main class="container">
+  <h2 style="text-align:center">Pilih Aplikasi</h2>
+  <p style="text-align:center;color:#64748b">
+    Silakan pilih aplikasi yang ingin digunakan.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🖥️</div>
+      <h2>Generator MPI</h2>
+      <p>
+        Buat prompt Media Pembelajaran Interaktif
+        dengan desain menarik dan kreatif.
+      </p>
+      <a class="button" href="mpi.html">
+        BUKA GENERATOR MPI
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📋</div>
+      <h2>Generator RPM</h2>
+      <p>
+        Susun Rencana Pembelajaran Mendalam
+        secara praktis dan sistematis.
+      </p>
+      <a class="button blue" href="rpm.html">
+        BUKA GENERATOR RPM
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Portal Alat Bantu Guru SD<br>
+  Dikembangkan untuk mendukung kreativitas guru
+</footer>
+
+</body>
+</html>
