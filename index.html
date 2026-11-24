@@ -4,108 +4,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal Guru SD</title>
+<title>Portal Digital Guru SD</title>
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#f1f5f9;
-  color:#1e293b;
+ font-family:Arial,sans-serif;
+ background:#f1f5f9;
+ color:#1e293b;
+ min-height:100vh;
 }
-header{
-  background:linear-gradient(135deg,#102d50,#2563eb);
-  color:white;
-  padding:55px 20px;
-  text-align:center;
+.hero{
+ background:linear-gradient(135deg,#102d50,#164e91,#2563eb);
+ color:white;
+ padding:55px 20px 75px;
+ text-align:center;
+ position:relative;
+ overflow:hidden;
 }
-header h1{font-size:32px;margin:10px 0}
-header p{color:#dbeafe}
+.hero:before,.hero:after{
+ content:"";
+ position:absolute;
+ border-radius:50%;
+ background:#ffffff12;
+}
+.hero:before{width:250px;height:250px;top:-120px;left:-70px}
+.hero:after{width:300px;height:300px;bottom:-210px;right:-70px}
+.logo{font-size:48px;margin-bottom:15px}
+.hero h1{
+ font-size:clamp(26px,5vw,42px);
+ margin-bottom:14px;
+ letter-spacing:1px;
+}
+.hero p{
+ color:#dbeafe;
+ max-width:650px;
+ margin:auto;
+ line-height:1.7;
+ font-size:15px;
+}
+.tag{
+ display:inline-block;
+ margin-top:22px;
+ background:#ffffff20;
+ border:1px solid #ffffff50;
+ border-radius:30px;
+ padding:9px 18px;
+ font-size:12px;
+ letter-spacing:1px;
+}
 .container{
-  max-width:900px;
-  margin:35px auto;
-  padding:15px;
+ max-width:1000px;
+ margin:-35px auto 0;
+ padding:0 20px 40px;
+ position:relative;
 }
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
+.heading{text-align:center;margin-bottom:25px}
+.heading h2{font-size:24px;margin-bottom:8px}
+.heading p{font-size:14px;color:#64748b}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ gap:22px;
 }
 .card{
-  background:white;
-  padding:28px;
-  border-radius:18px;
-  box-shadow:0 8px 25px #00000010;
-  text-align:center;
+ background:white;
+ border-radius:20px;
+ padding:28px;
+ box-shadow:0 10px 35px #0f172a12;
+ border:1px solid #e2e8f0;
+ transition:.3s;
 }
-.icon{font-size:48px}
-.card h2{margin:15px 0 10px}
-.card p{color:#64748b;line-height:1.6}
-a.button{
-  display:inline-block;
-  background:#059669;
-  color:white;
-  padding:13px 25px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-  margin-top:12px;
+.card:hover{
+ transform:translateY(-6px);
+ box-shadow:0 16px 40px #0f172a20;
 }
-a.button.blue{background:#2563eb}
-a.button:hover{opacity:.85}
+.card-icon{
+ width:65px;height:65px;
+ border-radius:18px;
+ display:grid;place-items:center;
+ font-size:32px;
+ margin-bottom:20px;
+}
+.mpi .card-icon{background:#d1fae5}
+.rpm .card-icon{background:#dbeafe}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{
+ color:#64748b;
+ font-size:14px;
+ line-height:1.7;
+ min-height:48px;
+}
+.button{
+ display:block;
+ text-align:center;
+ color:white;
+ text-decoration:none;
+ padding:14px;
+ margin-top:22px;
+ border-radius:11px;
+ font-weight:bold;
+ font-size:13px;
+ transition:.2s;
+}
+.button:hover{filter:brightness(1.1)}
+.mpi .button{background:#059669}
+.rpm .button{background:#2563eb}
+.info{
+ margin-top:28px;
+ background:#eaf2ff;
+ border:1px solid #d5e4ff;
+ padding:20px;
+ border-radius:15px;
+ text-align:center;
+ color:#31527c;
+ font-size:13px;
+ line-height:1.7;
+}
 footer{
-  text-align:center;
-  padding:30px;
-  color:#64748b;
-  font-size:13px;
+ text-align:center;
+ padding:25px 15px;
+ color:#64748b;
+ font-size:12px;
+ line-height:1.8;
 }
 </style>
 </head>
 <body>
 
-<header>
-  <div style="font-size:45px">🎓</div>
-  <h1>PORTAL GURU SD</h1>
-  <p>Pusat Alat Bantu Pembelajaran Digital Guru Sekolah Dasar</p>
+<header class="hero">
+ <div class="logo">🎓</div>
+ <h1>PORTAL DIGITAL GURU SD</h1>
+ <p>
+  Selamat datang di pusat alat bantu pembelajaran digital.
+  Mari berkreasi dan menciptakan pembelajaran yang lebih
+  menarik, bermakna, dan menyenangkan.
+ </p>
+ <div class="tag">✨ KREATIF • INOVATIF • INSPIRATIF</div>
 </header>
 
 <main class="container">
-  <h2 style="text-align:center">Pilih Aplikasi</h2>
-  <p style="text-align:center;color:#64748b">
-    Silakan pilih aplikasi yang ingin digunakan.
-  </p>
+ <div class="heading">
+  <h2>Pilih Aplikasi Anda</h2>
+  <p>Silakan pilih alat bantu yang ingin digunakan.</p>
+ </div>
 
-  <div class="grid">
-    <div class="card">
-      <div class="icon">🖥️</div>
-      <h2>Generator MPI</h2>
-      <p>
-        Buat prompt Media Pembelajaran Interaktif
-        dengan desain menarik dan kreatif.
-      </p>
-      <a class="button" href="mpi.html">
-        BUKA GENERATOR MPI
-      </a>
-    </div>
+ <section class="cards">
 
-    <div class="card">
-      <div class="icon">📋</div>
-      <h2>Generator RPM</h2>
-      <p>
-        Susun Rencana Pembelajaran Mendalam
-        secara praktis dan sistematis.
-      </p>
-      <a class="button blue" href="rpm.html">
-        BUKA GENERATOR RPM
-      </a>
-    </div>
-  </div>
+  <article class="card mpi">
+   <div class="card-icon">🖥️</div>
+   <h3>Generator MPI</h3>
+   <p>
+    Buat prompt Media Pembelajaran Interaktif
+    dengan pilihan tema, desain, animasi,
+    materi, dan kuis pembelajaran.
+   </p>
+   <a class="button"
+      href="generator_prompt_mpi_guru_sd.html">
+      BUKA GENERATOR MPI →
+   </a>
+  </article>
+
+  <article class="card rpm">
+   <div class="card-icon">📋</div>
+   <h3>Generator RPM</h3>
+   <p>
+    Susun Rencana Pembelajaran Mendalam
+    secara praktis, sistematis, dan sesuai
+    kebutuhan pembelajaran di sekolah.
+   </p>
+   <a class="button"
+      href="generator_rpm_guru_sd.html">
+      BUKA GENERATOR RPM →
+   </a>
+  </article>
+
+ </section>
+
+ <div class="info">
+  💡 <strong>Ruang Kreasi Guru</strong><br>
+  Manfaatkan teknologi untuk mengembangkan
+  pembelajaran yang kreatif dan berkualitas.
+ </div>
 </main>
 
 <footer>
-  Portal Alat Bantu Guru SD<br>
-  Dikembangkan untuk mendukung kreativitas guru
+ <strong>PORTAL DIGITAL GURU SD</strong><br>
+ Dikembangkan oleh <strong>Wahyono, S.Pd.SD.</strong><br>
+ <strong>KKG KAMLA © 2026</strong><br>
+ Media Kreasi dan Inovasi Pembelajaran
 </footer>
-
-</body>
-</html>
